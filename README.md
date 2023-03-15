@@ -14,7 +14,10 @@
     allowing the object to be relocated elsewhere in the browser.<br>
     And if the element does not fit on the screen, it will fall to the next line following the orientation of the property we choose left or right.<br>
 
-  Link: >> 
+  Link: >> https://ro6son.github.io/Float-Css/
+  
+  ![image](https://user-images.githubusercontent.com/91978309/225403731-c9e4861f-ba0b-4645-a0a7-5c8852357b41.png)
+
   
   
 
