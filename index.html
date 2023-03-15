@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- #Goal: characteristics and behavior of the float property -->
+    <title>
+        Float
+    </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/float.css">
+</head>
+
+<body>
+    <div class="elementExample elementExample_first">
+        Apenas uma div
+    </div>
+    <div class="elementExample elementExample_last">
+        Apenas outra div
+    </div>
+    <p class="elementParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sequi doloribus
+        nesciunt sunt suscipit harum, at, officiis commodi voluptates magni laboriosam! Vitae est veritatis vel
+        asperiores voluptatem, nobis facere cupiditate! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Blanditiis, sequi doloribus nesciunt sunt suscipit harum, at, officiis commodi voluptates magni laboriosam!
+        Vitae est veritatis vel asperiores voluptatem, nobis facere cupiditate! Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Blanditiis, sequi doloribus nesciunt sunt suscipit harum, at, officiis commodi voluptates
+        magni laboriosam! Vitae est veritatis vel asperiores voluptatem, nobis facere cupiditate!</p>
+    <br>
+    <br>
+    <br>
+
+
+    <article> <!-- Daddy -->
+        <div class="elementExample1 elementExample_first1">
+            Apenas uma div
+        </div>
+        <div class="elementExample2 elementExample_last2">
+            Apenas outra div
+        </div>
+        <p class="elementParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sequi
+            doloribus
+            nesciunt sunt suscipit harum, at, officiis commodi voluptates magni laboriosam! Vitae est veritatis vel
+            asperiores voluptatem, nobis facere cupiditate! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Blanditiis, sequi doloribus nesciunt sunt suscipit harum, at, officiis commodi voluptates magni laboriosam!
+            Vitae est veritatis vel asperiores voluptatem, nobis facere cupiditate! Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit. Blanditiis, sequi doloribus nesciunt sunt suscipit harum, at, officiis commodi voluptates
+            magni laboriosam! Vitae est veritatis vel asperiores voluptatem, nobis facere cupiditate!</p>
+    </article>
+
+    
+</body>
+
+</html>
+
+<!-- Note: 
+    1. The float property creates a new behavior where the element is now floating on the screen, 
+    then consequently leaves its previous space vague to be occupied by another element.
+    2. One of the behaviors of float is, it never hides content even when hiding the element.
+    3. The "overflow: hidden" property forces a recalculation of the context, that is, it checks if there is someone floating inside this element.
+        a) The idea here is to hide any element that leaks a width and height to that parent element. When we recalculate the parent element (article) it
+           will consider the calculation taking into account the floating elements.
+        b) A good example of this behavior would be; when we need to put a background color on an element and we also need to consider
+           the elements floating on the screen.
+        c) The parent that is enclosing the floating element has lost its width and height, but we can recover these values ​​by setting 'overflow: hidden' in the parent.
+           
+    4. Does the "Clear" property check if there are any elements floating on the right or left? If you have it, it clears the context of the float
+    allowing the object to be relocated elsewhere in the browser.
+    And if the element does not fit on the screen, it will fall to the next line following the orientation of the property we choose left or right.
+
+    
+
+-->
